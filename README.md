@@ -17,8 +17,4 @@ The project is coded in an object oriented programming way.
 
 <br>
 
-<p align="center">
-  
 ![calculator](https://user-images.githubusercontent.com/64092567/84965400-d3260780-b0dc-11ea-822c-ea05388be875.PNG)
-
-</p>
