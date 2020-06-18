@@ -9,8 +9,11 @@ class Calculator:
 
 
 
-    #Define what to do on initialization
     def __init__(self, master=None):
+
+        '''
+        DOCSTRING: Define what to do on initialization
+        '''
         
         #Create an initial grey application window
         self.master = master
@@ -30,8 +33,13 @@ class Calculator:
 
 
 
-    #Method that creates the buttons
     def createButton(self):
+
+        '''
+        DOCSTRING: Method that creates the buttons
+        INPUT: nothing
+        OUTPUT: creates a button
+        '''
         
         #We first create each button one by one with the value we want
         #Using addButton() method which is described below
@@ -70,15 +78,25 @@ class Calculator:
 
 
 
-    #Method to process the creation of a button and make it clickable
     def addButton(self,value):
+
+        '''
+        DOCSTRING: Method to process the creation of a button and make it clickable
+        INPUT: value of the button (1,2,3,4,5,6,7,8,9,0,+,-,*,/,c,=)
+        OUTPUT: returns a designed button object
+        '''
         return Button(self.master, text=value, width=9, command = lambda: self.clickButton(str(value)))
     
 
 
 
-    #Method to program the actions that will happen in the calculator after a click of each button
     def clickButton(self, value):
+        
+        '''
+        DOCSTRING: Method to program the actions that will happen in the calculator after a click of each button
+        INPUT: value of the button (1,2,3,4,5,6,7,8,9,0,+,-,*,/,c,=)
+        OUTPUT: what action will be performed when a particular button is clicked
+        '''
         
         #Get the equation that's entered by the user
         current_equation=str(self.equation.get())
