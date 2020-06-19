@@ -9,13 +9,13 @@ class Calculator:
 
 
 
-    def __init__(self, master=None):
+    def __init__(self, master):
 
         '''
         DOCSTRING: Define what to do on initialization
         '''
         
-        #Create an initial grey application window
+        #Assign reference to the main window of the application
         self.master = master
 
         #Add a name to our application
