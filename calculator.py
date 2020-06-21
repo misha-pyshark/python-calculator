@@ -113,7 +113,6 @@ class Calculator:
         
         #If user clicked any other button, then add it to the equation line
         else:
-            current_equation=self.equation.get()
             self.equation.delete(0, END)
             self.equation.insert(0, current_equation+value)
 
